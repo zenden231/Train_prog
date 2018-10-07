@@ -2,9 +2,9 @@
 
 namespace Training2
 {
-    #region Dimensions of Shed
     class Shed
     {
+        #region Shed dimension
         int heigh;
         /// <summary>
         /// Сокращенное объявление свойстава без переменной
@@ -41,6 +41,7 @@ namespace Training2
         /// <param name="x"></param>
         /// <param name="y"></param>
         /// <param name="z"></param>
+        #endregion
         public void ExpandSize(int x, int y, int z)
         {
             _heigh += x;
@@ -49,4 +50,3 @@ namespace Training2
         }
     }
 }
-#endregion
