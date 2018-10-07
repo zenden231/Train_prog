@@ -48,6 +48,12 @@ namespace Training2
             _width += y;
             _lengthwise += z;
         }
+        /// <summary>
+        /// Get variables and then change them 
+        /// </summary>
+        /// <param name="vx"></param>
+        /// <param name="vy"></param>
+        /// <param name="vz"></param>
         public void GetAndExpandSize(ref int vx, ref int vy, ref int vz)
         {
             ExpandSize(vx, vy, vz);
