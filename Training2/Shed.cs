@@ -36,7 +36,7 @@ namespace Training2
             return size;
         }
         /// <summary>
-        /// Изменяет параметры объекта на заданное число (х, у, ЗЭД)
+        /// Изменяет параметры объекта на заданное число (х, у, z)
         /// </summary>
         /// <param name="x"></param>
         /// <param name="y"></param>
@@ -47,6 +47,13 @@ namespace Training2
             _heigh += x;
             _width += y;
             _lengthwise += z;
+        }
+        public void GetAndExpandSize(ref int vx, ref int vy, ref int vz)
+        {
+            ExpandSize(vx, vy, vz);
+            vy = _width;
+            vx = _heigh;
+            vz = _lengthwise;
         }
     }
 }

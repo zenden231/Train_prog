@@ -15,15 +15,16 @@ namespace Training2
             Console.WriteLine("Glubina: " + myShed._lengthwise);
             int resultSize = myShed.GetSize();
             Console.Write("Vvedite chislo dlya izmeneniya Vysoty: "); 
-            int heighAdd = Convert.ToInt32(Console.ReadLine());
+            int vx = Convert.ToInt32(Console.ReadLine());
             Console.Write("Vvedite chislo dlya izmeneniya Shiriny: ");
-            int widthAdd = Convert.ToInt32(Console.ReadLine());
+            int vy = Convert.ToInt32(Console.ReadLine());
             Console.Write("Vvedite chislo dlya izmeneniya glubiny: ");
-            int lengthwiseAdd = Convert.ToInt32(Console.ReadLine());
+            int vz = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Shed's standart ob'em: " + resultSize);
-            myShed.ExpandSize(heighAdd, widthAdd, lengthwiseAdd);
-            Console.WriteLine("Shed's custom ob'em: " + myShed.GetSize());
-            Console.ReadKey();
+            myShed.GetAndExpandSize(ref vx, ref vy, ref vz);
+            Console.WriteLine("new dlina: " + vx + "; new shirina: " + vy + "; new glubina: " + vz);
+            Console.WriteLine("Shed's new ob'em: " + myShed.GetSize());
+
         }
     }
 }
