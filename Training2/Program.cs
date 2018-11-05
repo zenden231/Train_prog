@@ -23,7 +23,7 @@ namespace Training2
             Console.WriteLine("Shed's standart ob'em: " + resultSize);
             myShed.GetAndExpandSize(ref vx, ref vy, ref vz);
             Console.WriteLine("new dlina: " + vx + "; new shirina: " + vy + "; new glubina: " + vz);
-            Console.WriteLine("Shed's new ob'em: " + myShed.GetSize());
+            Console.WriteLine("Shed's new ob'em : " + myShed.GetSize());
 
         }
     }
